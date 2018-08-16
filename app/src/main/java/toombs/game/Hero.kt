@@ -1,9 +1,16 @@
 package toombs.game
 
-import android.content.Context
-import android.view.View
+import android.graphics.Color
+import android.graphics.drawable.ShapeDrawable
+import android.graphics.drawable.shapes.OvalShape
 
-class Hero : View
+class Hero : ShapeDrawable
 {
-    constructor(ctx: Context) : super(ctx)
-}
+    constructor() : super(OvalShape()) {
+        intrinsicHeight = 100
+        intrinsicWidth = 100
+        paint.color = Color.parseColor("#00FF00")
+    }
+
+
+ }

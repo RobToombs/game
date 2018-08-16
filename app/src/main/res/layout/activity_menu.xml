@@ -9,7 +9,7 @@
     tools:context=".Menu">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/tv_title"
         android:layout_width="200dp"
         android:layout_height="35dp"
         android:layout_marginEnd="229dp"
@@ -19,75 +19,75 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:gravity="center_vertical|center_horizontal"
-        android:inputType="textPersonName"
-        android:text="Game"
+        android:text="@string/game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/levels"
+        android:id="@+id/btn_levels"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="253dp"
         android:layout_marginLeft="251dp"
         android:layout_marginRight="253dp"
         android:layout_marginStart="251dp"
-        android:text="Levels"
+        android:text="@string/levels"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
     <Button
-        android:id="@+id/continuous"
+        android:id="@+id/btn_continuous"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="252dp"
         android:layout_marginLeft="252dp"
         android:layout_marginRight="252dp"
         android:layout_marginStart="252dp"
-        android:text="Continuous"
+        android:text="@string/continuous"
+        android:onClick="continuousMode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/levels" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_levels" />
 
     <Button
-        android:id="@+id/versus"
+        android:id="@+id/btn_versus"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="252dp"
         android:layout_marginLeft="252dp"
         android:layout_marginRight="252dp"
         android:layout_marginStart="252dp"
-        android:text="Versus"
+        android:text="@string/versus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continuous" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_continuous" />
 
     <Button
-        android:id="@+id/stats"
+        android:id="@+id/btn_stats"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="252dp"
         android:layout_marginLeft="252dp"
         android:layout_marginRight="252dp"
         android:layout_marginStart="252dp"
-        android:text="Stats"
+        android:text="@string/stats"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/versus" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_versus" />
 
     <Button
-        android:id="@+id/settings"
+        android:id="@+id/btn_settings"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="252dp"
         android:layout_marginLeft="252dp"
         android:layout_marginRight="252dp"
         android:layout_marginStart="252dp"
-        android:text="Settings"
+        android:text="@string/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stats" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_stats" />
 </android.support.constraint.ConstraintLayout>
